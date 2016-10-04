@@ -8,6 +8,9 @@
   <body ng-app="SmokeApp">
     <main ng-controller="SmokeController as smoke">
       <h1>{{smoke.smoke}}</h1>
+      <div ng-repeat="cat in smoke.cats">
+        <cat-directive catinfo="cat"></cat-directive>
+      </div>
     </main>
 
     <script src="bundle.js"></script>
